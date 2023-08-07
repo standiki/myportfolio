@@ -1,0 +1,52 @@
+:root {
+  --primaryDark: #1b1b1b;
+}
+
+/* button {
+  position: absolute;
+  top: 5%;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1rem;
+  height: 1.2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+} */
+
+span {
+  width: 1.65rem;
+  height: 0.15rem;
+  background: var(--primaryDark);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+/* .open-first-child {
+  transform: rotate(45deg);
+}
+.close-first-child {
+  transform: rotate(0);
+}
+.open-second-child {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.closed-second-child {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.open-third-child {
+  transform: rotate(-45deg);
+}
+.close-third-child {
+  transform: rotate(0);
+} */

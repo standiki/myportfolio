@@ -1,5 +1,11 @@
+import Burger from "./components/Burger";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Burger />
+    </>
+  );
 }
 
 export default App;
