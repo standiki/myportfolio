@@ -5,9 +5,9 @@ function Burger() {
 
   const styles = {
     button: {
-      position: "absolute",
-      top: "5%",
-      left: "2rem",
+      // position: "absolute",
+      // top: "5%",
+      // left: "2rem",
       display: "flex",
       flexDirection: "column",
       justifyContent: "space-around",
@@ -29,23 +29,23 @@ function Burger() {
     //   transformOrigin: "1px",
     // },
 
-    FirstChild: {
+    firstChild: {
       transform: open ? "rotate(45deg)" : "rotate(0)",
     },
-    SecondChild: {
+    secondChild: {
       transform: open ? "translateX(20px)" : "translateX(0)",
       opacity: open ? "0" : "1",
     },
-    ThirdChild: {
+    thirdChild: {
       transform: open ? "rotate(-45deg)" : "rotate(0)",
     },
   };
 
   return (
     <button style={styles.button} onClick={() => setOpen(!open)}>
-      <span style={styles.FirstChild}></span>
-      <span style={styles.SecondChild}></span>
-      <span style={styles.ThirdChild}></span>
+      <span style={styles.firstChild}></span>
+      <span style={styles.secondChild}></span>
+      <span style={styles.thirdChild}></span>
     </button>
   );
 }

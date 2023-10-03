@@ -1,9 +1,11 @@
-import Burger from "./components/Burger";
+import Header from "./components/Header";
+
+import { userInfo, projects, social } from "./components/data";
 
 function App() {
   return (
     <>
-      <Burger />
+      <Header name={userInfo[0].name} />
     </>
   );
 }
