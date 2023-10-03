@@ -81,6 +81,7 @@ span {
   background: var(--light);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
+  padding: 15px 0;
 }
 
 .navbar-header {
