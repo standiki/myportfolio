@@ -92,7 +92,7 @@ span {
 }
 
 .navbar-brand {
-  color: var(--blue);
+  color: var(--color);
   font-size: 1.6rem;
   font-weight: 600;
   display: inline-block;
