@@ -14,6 +14,24 @@ export const userInfo = [
   },
 ];
 
+export const links = [
+  {
+    id: 1,
+    url: "/about",
+    title: "about me",
+  },
+  {
+    id: 2,
+    url: "/portfolio",
+    title: "portfolio",
+  },
+  {
+    id: 3,
+    url: "/contact",
+    title: "contact",
+  },
+];
+
 export const projects = [
   {
     id: 1,
