@@ -91,6 +91,15 @@ span {
   padding: 1.5rem;
 }
 
+.navbar-brand {
+  color: var(--blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: inline-block;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
 @media screen and (min-width: 800px) {
   .container {
     max-width: 1170px;
