@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-function Burger() {
-  const [open, setOpen] = useState(false);
-
+function Burger({ toggle }) {
   const styles = {
     button: {
       // position: "absolute",
@@ -30,19 +28,19 @@ function Burger() {
     // },
 
     firstChild: {
-      transform: open ? "rotate(45deg)" : "rotate(0)",
+      transform: toggle ? "rotate(45deg)" : "rotate(0)",
     },
     secondChild: {
-      transform: open ? "translateX(20px)" : "translateX(0)",
-      opacity: open ? "0" : "1",
+      transform: toggle ? "translateX(20px)" : "translateX(0)",
+      opacity: toggle ? "0" : "1",
     },
     thirdChild: {
-      transform: open ? "rotate(-45deg)" : "rotate(0)",
+      transform: toggle ? "rotate(-45deg)" : "rotate(0)",
     },
   };
 
   return (
-    <button style={styles.button} onClick={() => setOpen(!open)}>
+    <button style={styles.button}>
       <span style={styles.firstChild}></span>
       <span style={styles.secondChild}></span>
       <span style={styles.thirdChild}></span>

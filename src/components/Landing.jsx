@@ -1,9 +1,13 @@
 import Header from "./Header";
 
-import data from "./data";
+import { userInfo, links } from "./data";
 
 const Landing = () => {
-  return <div></div>;
+  return (
+    <div className="App">
+      <Header name={userInfo[0].name} navLinks={links} />
+    </div>
+  );
 };
 
 export default Landing;
