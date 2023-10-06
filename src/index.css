@@ -34,7 +34,12 @@ a {
 
 button {
   background: transparent;
+  cursor: pointer;
   border: none;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Navbar toggle button */
@@ -94,14 +99,20 @@ span {
   background: var(--light);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
-  padding: 8.5px 0;
+  padding: 0.5rem 1rem;
+}
+
+.navbar > .container {
+  padding: 1rem;
+  margin: auto;
 }
 
 .navbar-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navbar-brand,
@@ -120,7 +131,8 @@ span {
 .navbar-nav a {
   display: block;
   text-transform: uppercase;
-  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
   transition: var(--transition);
 }
 
@@ -134,20 +146,15 @@ span {
 }
 
 @media screen and (min-width: 800px) {
-  .container {
+  .navbar > .container {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
   }
 
-  .navbar-header {
-    padding: 0;
-  }
-
-  .nav-toggle {
+  .nav-toggler {
     display: none;
   }
 
@@ -157,14 +164,13 @@ span {
 
   .navbar-nav {
     display: flex;
-    list-style: none;
   }
 
   .navbar-nav a {
     margin: 0 1rem;
     padding: 0;
   }
-
+  /* 
   .navbar-nav a:hover {
-  }
+  } */
 }

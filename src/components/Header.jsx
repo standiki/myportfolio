@@ -21,7 +21,7 @@ const Header = ({ name, navLinks }) => {
         <div className="navbar-header">
           <h4 className="navbar-brand">{name}</h4>
           {/* use button here instead */}
-          <button className="nav-toggle" onClick={() => setToggle(!toggle)}>
+          <button className="nav-toggler" onClick={() => setToggle(!toggle)}>
             <BurgerMenu toggle={toggle} />
           </button>
         </div>
