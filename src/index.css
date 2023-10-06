@@ -103,7 +103,8 @@ span {
 }
 
 .navbar > .container {
-  padding: 1rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin: auto;
 }
 
